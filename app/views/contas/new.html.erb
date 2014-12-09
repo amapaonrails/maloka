@@ -1,0 +1,15 @@
+<div class="col-md-6 col-md-offset-3 panel panel-default">
+  <div class="panel-body">
+    <h2>Crie uma conta</h2>
+
+    <%= form_for @conta do |f| %>
+      <%= form_group_for f, :subdominio do %>
+        <div class="input-group">
+          <%= f.text_field :subdominio, class: 'form-control' %>
+          <span class="input-group-addon">.malohka.dev</span>
+        </div>
+      <% end %>
+      <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>
